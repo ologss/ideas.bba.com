@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style-about-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  
+    
+    <section>
+        <div class="nav_bar">
+            <ul>
+                <li> <a href="index.html" class="nav-links">Home</a> </li>
+                <li> <a href="index-about-us.html" class="nav-links">About IDEAS</a> </li>
+                <li> <a href="index-faq.html" class="nav-links">FAQ's</a> </li>
+            </ul>
+            <button><a href="#">Login</a></button>
+        </div>
+    
+
+    </section>
+    <section class="about-ideas">
+        <div class="content-wrapper">
+            <div class="about-images">
+                <img src="images/Frame 31.png" alt="Person with a laptop" class="image img14" height="231.928px" pd>
+                <img src="images/Frame 33.png" alt="Person on a tablet" class="image">
+            </div>
+            <div class="text">
+                <h2>About IDEAS</h2>
+                <p>The Ideas Program, sponsored by the World Bank, is dedicated to equipping individuals with essential digital skills to succeed in today's tech-driven world. Whether you're a beginner, a technical enthusiast, or a professional looking to upskill, our free program offers world-class training in Data Science and Software Development (Web & Mobile). Our curriculum is designed by industry experts to provide you with practical, career-ready skills that open doors to new opportunities.</p>
+                <br>
+                <p>By participating in the Ideas Program, you'll gain the knowledge and confidence needed to advance in your career and remain relevant in today's fast-changing workforce. This is more than just learning—it's about transforming your future and achieving your professional goals with cutting-edge, industry-relevant skills.</p>
+            </div>
+        </div>
+    </section>
+
+
+<footer>
+    <section class="footer-section">
+        <div class="footer-word">
+            <div>
+                <h3>
+                    Contact us
+                </h3>
+                <p>
+                    +234 903 912 3239
+                </p>
+
+                <p>
+                    Admin@bbtechng.com
+                </p>
+
+                <p>
+                    Admin@bba.com.ng
+                </p>
+            </div>
+
+            <div>
+                <h3>
+                    Partners
+                </h3>
+                <p>
+                    Kingdom
+                </p>
+
+                <p>
+                    Rise
+                </p>
+
+                <p>
+                    Others
+                </p>
+            </div>
+        </div>
+    </section>
+</footer>
+
+
+
+<script>
+    function toggleAnswer(faqId) {
+        var answer = document.getElementById(faqId);
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+
+
+                    //navbar
+                     
+    const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.responsive-menu');
+        const loginBtn = document.querySelector('.responsive-login-btn');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+            loginBtn.classList.toggle('show');
+        });
+
+
+</script>
+
+</body>
+</html>

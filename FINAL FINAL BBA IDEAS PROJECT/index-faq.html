@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style-faq.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+  
+    <section>
+        <div class="nav_bar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li> <a href="index-about-us.html" class="nav-links">About IDEAS</a> </li>
+            </ul>
+            <button><a href="#">Login</a></button>
+        </div>
+    
+
+    </section>
+
+        
+
+    <section class="hero1-section">    
+    <div class="section-2">
+        <div>
+            <img src="images/Frame 56.png" alt="" height="250px" width="400px" class="section-2-img">
+        </div>
+        <div class="section-2-words">
+            <div>
+                <h2>
+                    Who Can Apply?
+                </h2>
+            </div>
+            <div>
+                <p>
+                    This program is open to everyone! Whether you're just starting out or looking to make a career change, we welcome all individuals, male or female, aged 18 to 45. No prior experience is required—just a passion for learning and a commitment to your future
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq-section">
+
+        <h2>
+            Frequently Ask Questions
+        </h2>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq1')">
+                    Is it totally free?
+                </div>
+                <div class="faq-answer" id="faq1">
+                    Yes it is totally free
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq2')">
+                    What is the duration of the program?
+                </div>
+                <div class="faq-answer" id="faq2">
+                    Six(6) Months.
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer('faq3')">
+                    Are there online classes?
+                </div>
+                <div class="faq-answer" id="faq3">
+                    No! Classes are strictly on site.
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </section>
+
+   <footer>
+    <section class="footer-section" id="footer-sec">
+        <div class="footer-word">
+            <div>
+                <h3>
+                    Contact us
+                </h3>
+                <p>
+                    +234 903 912 3239
+                </p>
+
+                <p>
+                    Admin@bbtechng.com
+                </p>
+
+                <p>
+                    Admin@bba.com.ng
+                </p>
+            </div>
+
+            <div>
+                <h3>
+                    Partners
+                </h3>
+                <p>
+                    Kingdom
+                </p>
+
+                <p>
+                    Rise
+                </p>
+
+                <p>
+                    Others
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+   </footer>
+
+<script>
+    function toggleAnswer(faqId) {
+        var answer = document.getElementById(faqId);
+        if (answer.style.display === "block") {
+            answer.style.display = "none";
+        } else {
+            answer.style.display = "block";
+        }
+    }
+
+
+
+    const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.responsive-menu');
+        const loginBtn = document.querySelector('.responsive-login-btn');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('show');
+            loginBtn.classList.toggle('show');
+        });
+</script>
+
+
+
+
+</body>
+</html>
